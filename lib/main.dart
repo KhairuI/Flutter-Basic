@@ -18,17 +18,12 @@ class Home extends StatelessWidget {
       ) ,
 
       body: const Center(
-        child: Text(
-          'Hello World',
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.blueGrey,
-            fontFamily: 'Merriweather',
-
-          ),
-        ),
+        child: Image(
+          // network image
+            //image: NetworkImage('https://ps.w.org/dummy-images/assets/icon-256x256.png?rev=2024916'),
+          // asset image
+            image: AssetImage('assets/image2.jpg'),
+        )
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
