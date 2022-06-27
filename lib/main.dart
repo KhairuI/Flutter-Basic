@@ -17,13 +17,22 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.indigo[900],
       ) ,
 
-      body: const Center(
-        child: Image(
-          // network image
-            //image: NetworkImage('https://ps.w.org/dummy-images/assets/icon-256x256.png?rev=2024916'),
-          // asset image
-            image: AssetImage('assets/image2.jpg'),
-        )
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text("Khairul Islam"),
+        ElevatedButton(
+          onPressed: () { },
+          child: const Text('Button'),
+        ),
+          Container(
+            color: Colors.blueAccent,
+            padding: const EdgeInsets.all(25.0),
+            child: const Text('This is container'),
+          ),
+        ],
+
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {  },
