@@ -17,19 +17,30 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.indigo[900],
       ) ,
 
-      body: Row(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.start,
+
         children: [
-          const Text("Khairul Islam"),
-        ElevatedButton(
-          onPressed: () { },
-          child: const Text('Button'),
-        ),
+          Row(
+            children: const [
+              Text('Khairul'),
+              Text('Islam')
+            ],
+          ),
           Container(
             color: Colors.blueAccent,
+            padding: const EdgeInsets.all(20.0),
+            child: const Text('One'),
+          ),
+          Container(
+            color: Colors.deepOrangeAccent,
             padding: const EdgeInsets.all(25.0),
-            child: const Text('This is container'),
+            child: const Text('Two'),
+          ),
+          Container(
+            color: Colors.cyan,
+            padding: const EdgeInsets.all(30.0),
+            child: const Text('Three'),
           ),
         ],
 
