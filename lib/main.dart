@@ -12,9 +12,9 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter App'),
+        title: const Text('Student Profile'),
         centerTitle: true,
-        backgroundColor: Colors.indigo[900],
+        backgroundColor: Colors.indigo[600],
       ) ,
 
       body: Row(
